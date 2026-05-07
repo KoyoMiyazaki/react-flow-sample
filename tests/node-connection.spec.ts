@@ -6,10 +6,6 @@ test.describe("ノード接続", () => {
   });
 
   test("Node A から Node B に接続できる", async ({ page }) => {
-    await page.dragAndDrop(
-      ".react-flow__handle-right",
-      ".react-flow__handle-left",
-    );
     await page
       .locator('div[data-id="node-1"]')
       .locator(".react-flow__handle.react-flow__handle-right")
